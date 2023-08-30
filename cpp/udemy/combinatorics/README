@@ -1,0 +1,16 @@
+#combination
+nCr=n!/(n-r)!*r!
+
+#permutation
+nPr=n!/(n-r)!
+
+#formulas:
+for binomial coefficient
+nCr=n-1Cr+n-1Cr-1
+
+
+#problems:
+1. Binomail coeficient calculation. Top down approach.
+2. Birthday paradox: How many people are do have atleast 50% chance to have same birhtday.
+  assume p=probability of people having birthday on different day. p=365/365*(364)/365....so on.
+
