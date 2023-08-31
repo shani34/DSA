@@ -11,6 +11,13 @@ if(i==2*n){
 }
 //calling open brackets
     //calling close brackets
+
+    //  generateBrackets(n,open+1,close,i+1,ans,tmp+"(");={
+            //  tmp+="("
+            //  generateBrackets(n,open+1,close,i+1,ans,tmp);
+            // tmp.pop_back()
+    // }
+    
 if(open<n){
     generateBrackets(n,open+1,close,i+1,ans,tmp+"(");
 }    
