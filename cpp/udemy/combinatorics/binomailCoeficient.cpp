@@ -18,5 +18,5 @@ int Binomailcoef(int n, int k){
   return table[n][k];
 }
 int main(){
-   cout<< Binomailcoef(10,2)<<endl;
+   cout<< Binomailcoef(5,2)<<endl;
 }
