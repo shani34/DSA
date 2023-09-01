@@ -14,7 +14,7 @@ int merge(vector<int>&arr,int s, int e){
         tmp.push_back(arr[i]);
         i++;
     }else{
-        cnt+=(m-i+1);
+          cnt+=(m-i+1);
           tmp.push_back(arr[j]);
           j++;
     }
@@ -44,7 +44,7 @@ int mergeSort(vector<int>&arr, int s, int e){
     }
 
     //rec case
-    int mid=(s+e)/2;
+    int mid=s+(e-s)/2;
     int c1=mergeSort(arr,s,mid);
     int c2=mergeSort(arr,mid+1,e);
     int c3= merge(arr,s,e);
@@ -54,10 +54,11 @@ int mergeSort(vector<int>&arr, int s, int e){
 
 int main(){
     vector<int>arr;
-    arr.push_back(3);
-     arr.push_back(1);
-      arr.push_back(8);
-       arr.push_back(0);
+    arr.push_back(4);
+     arr.push_back(5);
+     arr.push_back(6);
+      arr.push_back(7);
+       arr.push_back(1);
        int e=arr.size()-1;
   cout<<mergeSort(arr,0,e);
 //   for(int i=0;i<arr.size();i++){
