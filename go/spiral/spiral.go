@@ -21,14 +21,14 @@ func Spiral(matrix [][]int ){
      //printing the bottom 
 	 if (top<bottom){
 		 for i:=right-left;i>=left;i--{
-			fmt.Printf("%v\t ",matrix[bottom-left][i])
+			fmt.Printf("%v\t ",matrix[bottom][i])
 		 }
 		 bottom--
 	 }
 
 	 // printing first column
 	 if left<right{
-		for i:=bottom-left;i>=top;i--{
+		for i:=bottom-top;i>=top;i--{
 			fmt.Printf("%v\t ",matrix[i][left])
 		 }
 		 left++
