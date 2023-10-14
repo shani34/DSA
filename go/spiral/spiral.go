@@ -3,7 +3,7 @@ package main
 import "fmt"
 func Spiral(matrix [][]int ){
 	n:=len(matrix)
-	left, top,right,bottom:=0,0,n-1,n-1
+	left,top,right,bottom:=0,0,n-1,n-1
 
 	for left<right && top<bottom{
 		//printing first row
